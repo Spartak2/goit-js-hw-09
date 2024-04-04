@@ -1,6 +1,8 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
 const images = [
   {
     preview:
@@ -82,7 +84,7 @@ const marcup = images
 
 galleryList.innerHTML = marcup;
 
-const lightbox = new SimpleLightbox('.gallery-link', {
+const lightBox = new SimpleLightbox('.gallery-link', {
   nav: true,
   captions: true,
   captionsData: 'alt',
